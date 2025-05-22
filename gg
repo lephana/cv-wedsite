@@ -1,0 +1,7 @@
+cd portal-website
+git init
+git add .
+git commit -m "Upload personal portal website"
+git branch -M main
+git remote add origin https://github.com/<ten-cua-ban>/portal-website.git
+git push -u origin main
