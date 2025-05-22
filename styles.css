@@ -1,20 +1,22 @@
-.container {
+.profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
-.avatar img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* Bo tròn ảnh */
-  object-fit: cover;
-}
 .info {
   flex: 1;
   padding-right: 20px;
 }
 
-.avatar {
-  flex-shrink: 0;
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
