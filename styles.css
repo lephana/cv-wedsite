@@ -21,7 +21,14 @@
 body {
     margin: 0px;
 }
+.info {
+  flex: 1;
+  padding-right: 20px;
+}
 
+.avatar {
+  flex-shrink: 0;
+}
 .cv-document {
 	box-sizing: border-box;
 	border: none;
