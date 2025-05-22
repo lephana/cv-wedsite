@@ -4,50 +4,61 @@ import { Mail, Briefcase, GraduationCap, Star, Code, User, Heart } from "lucide-
 
 export default function CVWebsite() {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <header className="max-w-5xl mx-auto text-center py-10">
-        <img src="/avatar.jpg" alt="Avatar" className="w-28 h-28 mx-auto rounded-full mb-4" />
-        <h1 className="text-4xl font-bold">Lê Công Đức Nghĩa</h1>
-        <p className="text-gray-500"> Giới tính: Nam |  Ngày sinh: 19/05/2000</p>
-        <p className="text-gray-600">Fullstack Developer | Đà Nẵng, Việt Nam</p>
-        <p className="text-blue-600"> (+84) 336487xxx | ✉ lenghia@gmail.com |  <a href="https://abc.tech" className="underline">abc.tech</a></p>
+    <div className="min-h-screen bg-gradient-to-br from-white to-slate-100 text-gray-800 font-sans p-6">
+      <header className="max-w-4xl mx-auto text-center py-10 space-y-2">
+        <img src="/avatar.jpg" alt="Avatar" className="w-28 h-28 mx-auto rounded-full shadow-md border-2 border-blue-200" />
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">Lê Công Đức Nghĩa</h1>
+        <p className="text-sm text-gray-500">Giới tính: Nam | Ngày sinh: 29/06/2000</p>
+        <p className="text-base text-gray-600 font-medium">Fullstack Developer | Đà Nẵng, Việt Nam</p>
+        <p className="text-sm text-blue-600">
+          📞 (+84) 336487xxx | ✉ <a href="mailto:lenghia@gmail.com" className="underline">lenghia@gmail.com</a> | <a href="https://abc.tech" className="underline">abc.tech</a>
+        </p>
       </header>
 
-      <main className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <main className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
         {/* Mục tiêu nghề nghiệp */}
-        <Card>
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><User className="mr-2 text-blue-500" /><h2 className="text-xl font-semibold">Mục tiêu nghề nghiệp</h2></div>
-            <p>Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của FUNiX . Mong muốn làm việc với vị trí Fullstack Developer, vận dụng kiến thức và không ngừng phát triển bản thân.</p>
+        <Card className="shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <User className="mr-2 text-blue-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Mục tiêu nghề nghiệp</h2>
+            </div>
+            <p>Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của FUNiX. Mong muốn làm việc với vị trí Fullstack Developer, vận dụng kiến thức và không ngừng phát triển bản thân.</p>
           </CardContent>
         </Card>
 
         {/* Học vấn */}
-        <Card>
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><GraduationCap className="mr-2 text-green-500" /><h2 className="text-xl font-semibold">Học vấn</h2></div>
+        <Card className="shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <GraduationCap className="mr-2 text-green-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Học vấn</h2>
+            </div>
             <ul className="list-disc ml-5">
-              <li><strong>FUNiX </strong> (6/2021 – 05/2022) – Chứng chỉ doanh nghiệp Fullstack, GPA: 9/10</li>
+              <li><strong>FUNiX</strong> (6/2021 – 05/2022) – Chứng chỉ doanh nghiệp Fullstack, GPA: 9/10</li>
               <li><strong>ĐH FPT</strong> (08/2016 – 07/2019) – Cử nhân Kỹ thuật phần mềm, GPA: 3.2/4</li>
             </ul>
           </CardContent>
         </Card>
 
         {/* Kinh nghiệm */}
-        <Card className="md:col-span-2">
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><Briefcase className="mr-2 text-purple-500" /><h2 className="text-xl font-semibold">Kinh nghiệm làm việc</h2></div>
+        <Card className="md:col-span-2 shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <Briefcase className="mr-2 text-purple-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Kinh nghiệm làm việc</h2>
+            </div>
             <ul className="list-disc ml-5 space-y-2">
               <li><strong>Công ty Y</strong> (05/2022 – nay) – Fullstack Developer
-                <ul className="list-disc ml-5 text-sm">
+                <ul className="list-disc ml-5 text-sm text-gray-600">
                   <li>Phát triển website dựa theo thiết kế</li>
                   <li>Thiết kế và truy vấn cơ sở dữ liệu</li>
                   <li>Lập trình server-side bằng Python, Java</li>
                 </ul>
               </li>
               <li><strong>Công ty X</strong> (06/2021 – 04/2022) – Web Designer
-                <ul className="list-disc ml-5 text-sm">
+                <ul className="list-disc ml-5 text-sm text-gray-600">
                   <li>Thiết kế giao diện bằng Figma, Canva, PTS</li>
                 </ul>
               </li>
@@ -56,9 +67,12 @@ export default function CVWebsite() {
         </Card>
 
         {/* Hoạt động */}
-        <Card>
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><Star className="mr-2 text-yellow-500" /><h2 className="text-xl font-semibold">Hoạt động</h2></div>
+        <Card className="shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <Star className="mr-2 text-yellow-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Hoạt động</h2>
+            </div>
             <ul className="list-disc ml-5">
               <li>FPT Edu Hackathon 2019 – Giải 3 bảng A</li>
               <li>Câu lạc bộ Z – Trưởng ban chuyên môn</li>
@@ -67,9 +81,12 @@ export default function CVWebsite() {
         </Card>
 
         {/* Kỹ năng */}
-        <Card>
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><Code className="mr-2 text-pink-500" /><h2 className="text-xl font-semibold">Kỹ năng</h2></div>
+        <Card className="shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <Code className="mr-2 text-pink-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Kỹ năng</h2>
+            </div>
             <ul className="list-disc ml-5">
               <li>HTML/CSS – Cơ bản</li>
               <li>JavaScript, NodeJS – Trung bình</li>
@@ -79,9 +96,12 @@ export default function CVWebsite() {
         </Card>
 
         {/* Chứng chỉ & Giải thưởng */}
-        <Card>
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><Star className="mr-2 text-orange-500" /><h2 className="text-xl font-semibold">Chứng chỉ – Giải thưởng</h2></div>
+        <Card className="shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <Star className="mr-2 text-orange-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Chứng chỉ – Giải thưởng</h2>
+            </div>
             <ul className="list-disc ml-5">
               <li>Chứng chỉ Lập trình Web – FUNIX (2021)</li>
               <li>Chứng chỉ Lập trình JavaScript – FUNIX (2021)</li>
@@ -90,9 +110,12 @@ export default function CVWebsite() {
         </Card>
 
         {/* Sở thích */}
-        <Card>
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><Heart className="mr-2 text-red-500" /><h2 className="text-xl font-semibold">Sở thích</h2></div>
+        <Card className="shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <Heart className="mr-2 text-red-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Sở thích</h2>
+            </div>
             <ul className="list-disc ml-5">
               <li>Âm nhạc</li>
               <li>Chơi game</li>
@@ -101,27 +124,33 @@ export default function CVWebsite() {
         </Card>
 
         {/* Dự án */}
-        <Card className="md:col-span-2">
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><Code className="mr-2 text-indigo-500" /><h2 className="text-xl font-semibold">Dự án</h2></div>
+        <Card className="md:col-span-2 shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <Code className="mr-2 text-indigo-500 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Dự án</h2>
+            </div>
             <ul className="list-disc ml-5 space-y-2">
               <li><strong>Trang web quản lý thú cưng</strong> (2021)
-                <p className="text-sm ml-4">Ứng dụng quản lý thông tin thú cưng, gồm thêm/sửa/xóa. Công nghệ: HTML, CSS.</p>
+                <p className="text-sm ml-4 text-gray-600">Ứng dụng quản lý thông tin thú cưng, gồm thêm/sửa/xóa. Công nghệ: HTML, CSS.</p>
               </li>
               <li><strong>Trang web xem tin tức</strong> (2021)
-                <p className="text-sm ml-4">Xem và tìm kiếm tin tức từ nhiều nguồn. Công nghệ: HTML, CSS.</p>
+                <p className="text-sm ml-4 text-gray-600">Xem và tìm kiếm tin tức từ nhiều nguồn. Công nghệ: HTML, CSS.</p>
               </li>
               <li><strong>CV cá nhân</strong> (2021)
-                <p className="text-sm ml-4">Website CV online với đầy đủ thông tin cá nhân và nghề nghiệp.</p>
+                <p className="text-sm ml-4 text-gray-600">Website CV online với đầy đủ thông tin cá nhân và nghề nghiệp.</p>
               </li>
             </ul>
           </CardContent>
         </Card>
 
         {/* Liên hệ */}
-        <Card className="md:col-span-2">
-          <CardContent className="p-5">
-            <div className="flex items-center mb-3"><Mail className="mr-2 text-blue-600" /><h2 className="text-xl font-semibold">Liên hệ</h2></div>
+        <Card className="md:col-span-2 shadow-md rounded-xl bg-white border border-gray-200">
+          <CardContent className="p-5 space-y-2 text-[15px] leading-relaxed text-gray-700">
+            <div className="flex items-center mb-2">
+              <Mail className="mr-2 text-blue-600 w-5 h-5" />
+              <h2 className="text-lg md:text-xl font-semibold text-gray-800">Liên hệ</h2>
+            </div>
             <p>📧 Email: lenghia@gmail.com</p>
             <p>🔗 Facebook | LinkedIn | Github</p>
           </CardContent>
