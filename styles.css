@@ -1,5 +1,6 @@
 .profile-container {
   display: flex;
+    flex-direction: row;      /* Xếp trái -> phải */
   align-items: center;      /* Căn giữa chiều dọc */
   justify-content: flex-start;
   gap: 40px;                /* Khoảng cách giữa avatar và info */
