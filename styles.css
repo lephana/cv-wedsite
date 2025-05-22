@@ -1,6 +1,19 @@
-body{
-  padding: 25px;
+.profile-container {
+  display: flex;
+  align-items: center;      /* Căn giữa chiều dọc */
+  justify-content: flex-start;
+  gap: 40px;                /* Khoảng cách giữa avatar và info */
+  padding: 20px;
 }
-.title {
-	color: #5C6AC4;
+
+.personal-info {
+  flex: 1;                  /* Cho phần text chiếm phần lớn */
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0;         /* Hình vuông */
+  border: 2px solid #ccc;
 }
