@@ -1,25 +1,14 @@
-.profile-container {
+.container {
   display: flex;
-  align-items: center;      /* Căn giữa chiều dọc */
-  justify-content: flex-start;
-  gap: 40px;                /* Khoảng cách giữa avatar và info */
-  padding: 20px;
-}
-
-.personal-info {
-  flex: 1;                  /* Cho phần text chiếm phần lớn */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .avatar img {
   width: 150px;
   height: 150px;
+  border-radius: 50%; /* Bo tròn ảnh */
   object-fit: cover;
-  border-radius: 0;         /* Hình vuông */
-  border: 2px solid #ccc;
-}
-
-body {
-    margin: 0px;
 }
 .info {
   flex: 1;
@@ -28,35 +17,4 @@ body {
 
 .avatar {
   flex-shrink: 0;
-}
-.cv-document {
-	box-sizing: border-box;
-	border: none;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	vertical-align: baseline;
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	font-family: arial, sans-serif, tahoma;
-	font-size: 10pt;
-}
-
-.cv-page {
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    text-decoration: none;
-    width: 900px;
-    min-height: 900px;
-    margin: 0 auto;
-    box-shadow: 0 0 1px rgba(0,0,0,.5);
-    background-color: #fff;
-    position: relative;
-
-    padding: 40px
 }
