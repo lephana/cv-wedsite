@@ -14,9 +14,8 @@
 }
 
 .avatar img {
-  width: 113px;
-  height: 113px;
-  margin-left: 30px;
+  width: 130px;
+  height: 130px;
   border-radius: 0;
   object-fit: cover;
 }
